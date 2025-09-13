@@ -70,8 +70,8 @@ const App: React.FC = () => {
         <Star className="w-1 h-1 top-[95%] left-[50%]" />
       </div>
 
-      {/* Wrapper for the main content and the new button */}
-      <div className="relative z-30 flex flex-col items-center gap-10">
+      {/* Wrapper for the main content and the new button, now with responsive padding and max-width */}
+      <div className="relative z-30 flex w-full max-w-screen-md flex-col items-center gap-10 px-4">
         {/* The main content box with the celebratory message */}
         <div className="text-center p-8 sm:p-12 md:p-16 border-4 border-purple-400 bg-[#1e102f]/50 backdrop-blur-sm rounded-lg shadow-[0_0_20px_theme(colors.purple.500),inset_0_0_15px_theme(colors.purple.600)] transition-all duration-300 hover:shadow-[0_0_35px_theme(colors.purple.400),inset_0_0_20px_theme(colors.purple.500)] hover:border-purple-300">
           <h1 className="text-3xl sm:text-5xl md:text-8xl font-bold text-purple-200 drop-shadow-[0_0_8px_#c084fc]">
