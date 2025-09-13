@@ -15,6 +15,19 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
+      @keyframes firework-burst {
+        0% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(20);
+          opacity: 0;
+        }
+      }
+      .animate-firework {
+        animation: firework-burst 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+      }
     </style>
 <script type="importmap">
 {
